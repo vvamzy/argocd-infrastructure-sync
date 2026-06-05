@@ -1,1 +1,1 @@
-{"project_name": "argocd-infrastructure-sync", "status": "investigating_failure", "completed_percentage": 15, "history": ["System: Pipeline failed with exit code 127. Investigating dependencies and environment setup."]}
+{"project_name": "argocd-infrastructure-sync", "status": "investigating_failure", "completed_percentage": 15, "history": ["System: Pipeline failed with exit code 127. Investigating dependencies and environment setup.", "System: Manually reviewing environment configuration."]}
