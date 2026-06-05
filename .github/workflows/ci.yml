@@ -1,26 +1,34 @@
 name: CI
+
 on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
     strategy:
       matrix:
-        go-version: [1.17]
+        go-version: ['1.17.5']
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+    
     - name: Set up Go
+      id: set_go
       uses: actions/setup-go@v2
       with:
         go-version: ${{ matrix.go-version }}
+
     - name: Install dependencies
       run: |
         go mod download
         go mod verify
+
     - name: Run tests
       run: |
         go test ./... -cover
