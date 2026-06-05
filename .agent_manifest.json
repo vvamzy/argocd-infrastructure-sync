@@ -1,14 +1,15 @@
 {
   "project_name": "argocd-infrastructure-sync",
   "status": "in_progress",
-  "completed_percentage": 50,
+  "completed_percentage": 75,
   "history": [
     "System: Pipeline failed with exit code 127. Investigating dependencies and environment setup.",
     "System: Manually reviewing environment configuration.",
     "Agent: Added pytest requirement to CI setup.",
     "Agent: Updated GitHub Actions workflow file to include installation of required Python packages.",
     "Successfully completed development step for phase: ARCHITECTURE",
-    "Successfully completed development step for phase: CODE_DEVELOPMENT"
+    "Successfully completed development step for phase: CODE_DEVELOPMENT",
+    "Successfully completed development step for phase: TEST_WRITING"
   ],
-  "current_phase": "TEST_WRITING"
+  "current_phase": "PIPELINE_CREATION"
 }
