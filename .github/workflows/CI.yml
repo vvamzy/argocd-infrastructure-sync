@@ -1,5 +1,4 @@
-#!/bin/bash
-
-curl -OL https://bootstrap.pypa.io/get-pip.py
-python3 get-pip.py
-pip install pytest
+    - name: Install dependencies
+      run: |
+        python3 -m pip install --upgrade pip
+        pip install pytest
